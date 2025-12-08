@@ -13,18 +13,18 @@ private:
 	std::string language; 
 	std::string gender; 
 	int ISBN; 
-	int id; 
+	std::vector<int> id_reader; 
 	Date d; // Add the missing member variable for Date
 
 public: 
-	Book(std::string _title,Author& _author, std::string _language, std::string _gender, int _ISBN, int _id, Date& _d)
-		: title(_title), author(_author), language(_language), gender(_gender), ISBN(_ISBN), id(_id), d(_d) {}
+	Book(std::string _title, Author& _author, std::string _language, std::string _gender, int _ISBN, std::vector<int> _id, Date& _d)
+		: title(_title), author(_author), language(_language), gender(_gender), ISBN(_ISBN), id_reader(_id), d(_d) {}
 	std::string get_title() { return title; }
 	Author get_author() { return author; }
 	std::string get_language() { return language; }
 	std::string get_gender() { return gender; }
 	int get_ISBN() { return ISBN;  }
-	int get_id() { return id; }
+	std::vector<int> get_id() { return id_reader; }
 	Date get_Date() { return d;  }
 	
 

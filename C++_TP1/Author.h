@@ -8,10 +8,10 @@ private:
 	std::string name; 
 	std::string surname; 
 	int id; 
-	Date d; 
+	Date d_birth; 
 public: 
 	Author(std::string _name, std::string _surname, int _id, Date& _d)
-		: name(_name), surname(_surname), id(_id), d(_d) {}
+		: name(_name), surname(_surname), id(_id), d_birth(_d) {}
 
 };
 
