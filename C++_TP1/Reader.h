@@ -1,5 +1,5 @@
 #include <string>
-#include <vector>
+#include "Book.h"
 
 #pragma once
 class Reader

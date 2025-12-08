@@ -1,4 +1,5 @@
 #include <string>
+#include <vector>
 #include "Date.h"
 #include "Author.h"
 
@@ -29,6 +30,7 @@ public:
 	Date get_Date() const { return d;  }
 	int get_take() const { return take; }
 	void set_take(int new_take) { take = new_take; }
+	void set_id_readers(int id) { id_reader.push_back(id); }
 
 
 };
