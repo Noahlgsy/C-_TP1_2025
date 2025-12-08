@@ -1,5 +1,6 @@
 #include <string>
 #include "Date.h"
+#include "Author.h"
 
 
 #pragma once
@@ -8,7 +9,7 @@ class Book
 {
 private: 
 	std::string title; 
-	std::string author; 
+	Author author; 
 	std::string language; 
 	std::string gender; 
 	int ISBN; 
@@ -16,10 +17,10 @@ private:
 	Date d; // Add the missing member variable for Date
 
 public: 
-	Book(std::string _title, std::string _author, std::string _language, std::string _gender, int _ISBN, int _id, Date& _d)
+	Book(std::string _title,Author& _author, std::string _language, std::string _gender, int _ISBN, int _id, Date& _d)
 		: title(_title), author(_author), language(_language), gender(_gender), ISBN(_ISBN), id(_id), d(_d) {}
 	std::string get_title() { return title; }
-	std::string get_author() { return author; }
+	Author get_author() { return author; }
 	std::string get_language() { return language; }
 	std::string get_gender() { return gender; }
 	int get_ISBN() { return ISBN;  }
