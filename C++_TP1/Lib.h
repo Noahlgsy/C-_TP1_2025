@@ -14,7 +14,11 @@ public:
 	std::vector<Book> get_lib_Book() const { return lib_Book;  }
 	std::vector<Author> get_lib_Author() const { return lib_Author; }
 	std::vector<Reader> get_lib_Reader() const { return lib_Reader; }
+	void set_lib_Book(Book& b) { lib_Book.push_back(b); }  //ajouter des livres a la biblio
+	void set_lib_Book(Author& a) { lib_Author.push_back(a); }
+	void set_lib_Book(Reader& r) { lib_Reader.push_back(r); }
 	void lib_Loan(Book& b, Reader& r, Date& d); 
 	void lib_reLoan(Book& b, Reader& r, Date& d); 
+
 };
 
