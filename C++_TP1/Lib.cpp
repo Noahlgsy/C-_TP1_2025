@@ -22,7 +22,19 @@ std::vector<Book> Lib::find_author_book(const Author& a)
 		{
 			resultat.push_back(b); 
 		}
+	}
+	return resultat; 
+}
 
+std::vector<Book> Lib::find_loan_book(const Reader& r)
+{
+	std::vector<Book> resultat; 
+	for (const Book& b : lib_Book)
+	{
+		if (b.get_last_id() == r.get_id())
+		{
+			resultat.push_back(b); 
+		}
 	}
 	return resultat; 
 }

@@ -42,6 +42,6 @@ Date dl1(10, 12, 2025);
 Loan l1(dl1, 1, 1);
 l1.verify(b1, 1);
 Loan l2(dl1, 1, 2); //tant que le 1er l'a pas rendu le livre n'est pas dispo 
-l2.verify(b1, 2);
+l2.verify(b1, 2); 
 
 

@@ -27,6 +27,7 @@ public:
 	std::string get_gender() const { return gender; }
 	int get_ISBN() const { return ISBN;  }
 	std::vector<int> get_id() const { return id_reader; }
+	int get_last_id() const { return id_reader.back(); }
 	Date get_Date() const { return d;  }
 	int get_take() const { return take; }
 	void set_take(int new_take) { take = new_take; }

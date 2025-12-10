@@ -20,6 +20,7 @@ public:
 	void lib_Loan(Book& b, Reader& r, Date& d); 
 	void lib_reLoan(Book& b, Reader& r, Date& d); 
 	std::vector<Book> find_author_book(const Author& a); 
+	std::vector<Book> find_loan_book(const Reader& a);
 
 };
 
