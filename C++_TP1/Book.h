@@ -31,6 +31,7 @@ public:
 	int get_take() const { return take; }
 	void set_take(int new_take) { take = new_take; }
 	void set_id_readers(int id) { id_reader.push_back(id); }
+	friend std::ostream& operator<<(std::ostream& os, Book& b); 
 
 
 };
