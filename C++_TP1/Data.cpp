@@ -25,15 +25,23 @@ std::vector<int> id_readers = { r1.get_id(), r2.get_id(), r3.get_id() };
 Date d1_publication(1, 12, 2022);
 Book b1("The beginning of the hero", a1, "English", "Fantastic", 1, id_readers, d1_publication, 1);
 Date d2_publication(2, 12, 2022);
-Book b2("The beginning of the hero", a1, "English", "Fantastic", 1, id_readers, d2_publication, 1);
+Book b2("The beginning of the hero", a1, "English", "Fantastic", 2, id_readers, d2_publication, 1);
 Date d3_publication(3, 12, 2022);
-Book b3("The beginning of the hero", a2, "English", "Fantastic", 1, id_readers, d3_publication, 1);
+Book b3("The beginning of the hero", a2, "English", "Fantastic", 3, id_readers, d3_publication, 1);
 Date d4_publication(4, 12, 2022);
-Book b4("The beginning of the hero", a1, "English", "Fantastic", 1, id_readers, d4_publication, 1);
+Book b4("The beginning of the hero", a1, "English", "Fantastic", 4, id_readers, d4_publication, 1);
 Date d5_publication(5, 12, 2022);
-Book b5("The beginning of the hero", a3, "English", "Fantastic", 1, id_readers, d5_publication, 1);
+Book b5("The beginning of the hero", a3, "English", "Fantastic", 5, id_readers, d5_publication, 1);
 Date d6_publication(6, 12, 2022);
-Book b6("The beginning of the hero", a2, "English", "Fantastic", 1, id_readers, d6_publication, 1);
+Book b6("The beginning of the hero", a2, "English", "Fantastic", 6, id_readers, d6_publication, 1);
 
 std::vector<Book> books = { b1, b2, b3, b4, b5, b6 }; 
+
+//Creation of loan 
+Date dl1(10, 12, 2025);
+Loan l1(dl1, 1, 1);
+l1.verify(b1, 1);
+Loan l2(dl1, 1, 2); //tant que le 1er l'a pas rendu le livre n'est pas dispo 
+l2.verify(b1, 2);
+
 

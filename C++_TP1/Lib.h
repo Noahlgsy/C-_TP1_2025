@@ -19,6 +19,7 @@ public:
 	void set_lib_Book(Reader& r) { lib_Reader.push_back(r); }
 	void lib_Loan(Book& b, Reader& r, Date& d); 
 	void lib_reLoan(Book& b, Reader& r, Date& d); 
+	std::vector<Book> find_author_book(const Author& a); 
 
 };
 
