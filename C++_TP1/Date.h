@@ -12,5 +12,6 @@ public:
 		: day(_day), month(_month), year(_year) {}
 	Date() = default; 
 	
+	int get_month() const { return month; }
 };
 
