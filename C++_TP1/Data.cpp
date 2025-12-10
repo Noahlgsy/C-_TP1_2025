@@ -37,11 +37,4 @@ Book b6("The beginning of the hero", a2, "English", "Fantastic", 6, id_readers, 
 
 std::vector<Book> books = { b1, b2, b3, b4, b5, b6 }; 
 
-//Creation of loan 
-Date dl1(10, 12, 2025);
-Loan l1(dl1, 1, 1);
-l1.verify(b1, 1);
-Loan l2(dl1, 1, 2); //tant que le 1er l'a pas rendu le livre n'est pas dispo 
-l2.verify(b1, 2); 
-
 
