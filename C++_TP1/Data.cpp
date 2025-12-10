@@ -35,6 +35,7 @@ Book b5("The beginning of the hero", a3, "English", "Fantastic", 5, id_readers, 
 Date d6_publication(6, 12, 2022);
 Book b6("The beginning of the hero", a2, "English", "Fantastic", 6, id_readers, d6_publication, 1);
 
-std::vector<Book> books = { b1, b2, b3, b4, b5, b6 }; 
+std::vector<Book> books = { b1, b2, b3, b4, b5, b6}; 
+
 
 

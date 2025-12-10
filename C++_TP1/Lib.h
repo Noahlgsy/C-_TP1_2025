@@ -9,7 +9,7 @@ private:
 	std::vector<Reader> lib_Reader;
 
 public: 
-	Lib(std::vector<Book> _libb, std::vector<Author> _liba, std::vector<Reader> _libr )
+	Lib(std::vector<Book> _libb, std::vector<Author> _liba, std::vector<Reader> _libr)
 		: lib_Book(_libb), lib_Author(_liba), lib_Reader(_libr) {}
 	std::vector<Book> get_lib_Book() const { return lib_Book;  }
 	std::vector<Author> get_lib_Author() const { return lib_Author; }
@@ -21,6 +21,8 @@ public:
 	void lib_reLoan(Book& b, Reader& r, Date& d); 
 	std::vector<Book> find_author_book(const Author& a); 
 	std::vector<Book> find_loan_book(const Reader& a);
+	int get_take_book(Book& b) const { return b.get_take(); }
+	float pourcent_of_loan_book(Lib& l); 
 
 };
 
